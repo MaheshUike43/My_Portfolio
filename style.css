@@ -6,6 +6,11 @@
   font-family: "Marmelad", sans-serif;
 }
 
+#main-head {
+  width: 100%;
+  position: sticky;
+  top: 0;
+}
 #main-head .navbar {
   background: rgb(0, 0, 0);
 }
@@ -24,13 +29,14 @@
   color: rgb(255, 200, 0);
 }
 
-#about-me {
-  position: relative;
-}
-#about-me #aboutMe {
-  position: absolute;
-  width: 1140px;
-  top: 90px;
+#about-me #head-bg {
+  background-image: url(/assets/image/AboutMeBg.jpg);
+  background-repeat: no-repeat;
+  background-position: 0;
+  background-size: cover;
+  max-width: 100%;
+  max-height: 100%;
+  padding: 5rem 0rem;
 }
 #about-me #aboutMe .profile-img {
   width: 250px;
@@ -310,10 +316,29 @@
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 100%;
   z-index: 4;
-  bottom: 80px;
-  right: 50px;
+  bottom: 10px;
+  right: 10px;
 }
 .page-up a {
   font-size: 40px;
   color: #000;
+}
+
+@media screen and (max-width: 992px) {
+  .tog-btn {
+    color: white;
+    float: right;
+    font-size: 34px;
+    padding-right: 0;
+  }
+  #main-head #navbarTogglerDemo03 {
+    position: absolute;
+    top: 61px;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  #main-head #navbarTogglerDemo03 .nav-link {
+    padding: 10px 50px;
+    text-align: center;
+  }
 }/*# sourceMappingURL=style.css.map */
